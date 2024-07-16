@@ -36,7 +36,7 @@ export default function Auth({type}:{type:"signup" | "signin"}) {
                     </div>
                     <div className="text-slate-300">
                         {type === "signin" ? "Don't have an account?" : "Already have an account?" }
-                        <Link className="pl-2 underline" to={type === "signin" ? "/signup" : "/signin"}>
+                        <Link className="pl-2 underline" to={type === "signin" ? "/" : "/signin"}>
                             {type === "signin" ? "Sign up" : "Sign in"}
                         </Link>
                     </div>
@@ -54,7 +54,7 @@ export default function Auth({type}:{type:"signup" | "signin"}) {
                             username: e.target.value
                         })
                     }} />
-                    <LabelledInput label="Password" type={"password"} placeholder="123456" onChange={(e) => {
+                    <LabelledInput label="Password" type={"password"} placeholder="......." onChange={(e) => {
                         setPostInputs({
                             ...postInputs,
                             password: e.target.value
