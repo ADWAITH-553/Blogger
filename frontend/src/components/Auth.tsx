@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react'
+import  { ChangeEvent, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { SignupInput } from 'adwaith53-bloggercommon'
 import { BACKEND_URL } from '../Config'
